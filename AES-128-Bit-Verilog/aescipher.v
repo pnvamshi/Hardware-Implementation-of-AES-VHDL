@@ -25,7 +25,4 @@ module aescipher(clk,datain,key,dataout);
     rounds r9(.clk(clk),.rc(4'b1000),.data(r8_out),.keyin(keyout8),.keyout(keyout9),.rndout(r9_out));
     rounndlast r10(.clk(clk),.rc(4'b1001),.rin(r9_out),.keylastin(keyout9),.fout(dataout));
     
-
-
-
 endmodule
