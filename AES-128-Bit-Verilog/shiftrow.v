@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    23:00:21 07/14/2015 
-// Design Name: 
-// Module Name:    shiftrow 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 module shiftrow(sb,sr);
 
 input [127:0] sb;
@@ -43,6 +25,5 @@ assign          sr[23:16] = sb[119:112];
 assign          sr[15:8] = sb[79:72];
 assign          sr[7:0] = sb[39:32]; 
 
-     	 
 
 endmodule
